@@ -4,7 +4,7 @@ Responsável pelas regras de negócio, validações e transições de estado das
 """
 
 from typing import List, Dict, Optional
-import src.repositories.estado_OS_repository as estado_repo
+import src.repositories.estados_OS_repository as estado_repo
 from src.models.estado import Estado
 
 
