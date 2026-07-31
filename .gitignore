@@ -1,0 +1,43 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribuição / empacotamento
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Ambientes virtuais
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# Variáveis de ambiente / segredos
+.env
+
+# Testes / cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Bancos de dados locais (útil no teu projeto TechService)
+*.db
+*.sqlite3
+
+# IDEs / editores
+.vscode/
+.idea/
+*.swp
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
