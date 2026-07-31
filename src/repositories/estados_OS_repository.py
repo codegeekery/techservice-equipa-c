@@ -16,3 +16,27 @@ def adicionar_estado(nome, descricao, ordem, ativo):
 
     cursor.close()
     conn.close()
+
+
+def listar_estado(id_estado):
+    conn = conectar()
+    cursor = conn.cursor(dictionary=True)
+
+    sql = """
+    SELECT
+        id_estado,
+        nome,
+        descricao,
+        ordem,
+        ativo
+    FROM estados_os
+    WHERE id_estado = %s
+    """
+
+    cursor.execute(sql, (id_estado,))
+    estado = cursor.fetchone()
+
+    cursor.close()
+    conn.close()
+
+    return estado
