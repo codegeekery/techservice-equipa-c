@@ -9,9 +9,9 @@ class Estado:
         activo=1
     ):
         self.id_estado = id_estado
-        self.nombre = nombre
-        self.descripcion = descripcion
-        self.orden = orden
+        self.nome = nombre
+        self.descripcao = descripcion
+        self.ordem = orden
         self.activo = activo
 
     def __str__(self):
