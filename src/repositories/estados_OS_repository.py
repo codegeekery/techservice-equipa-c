@@ -91,4 +91,3 @@ def eliminar_estado(id_estado):
 
     cursor.close()
     conexao.close()
-
