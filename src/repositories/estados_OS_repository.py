@@ -70,7 +70,7 @@ def alterar_status(id_estado, novo_status):
 def contar_os_por_estado(id_estado):
     conexao = conectar()
     cursor = conexao.cursor()
-    cursor.execute("SELECT COUNT(*) FROM ordens_servico WHERE id_estado = %s", (id_estado,))
+    cursor.execute("SELECT COUNT(*) FROM estados_os WHERE id_estado = %s", (id_estado,))
     total = cursor.fetchone()[0]
     cursor.close()
     conexao.close()

@@ -126,13 +126,13 @@ class EstadoService:
             raise ValueError("O valor de status deve ser 0 (inativo) ou 1 (ativo).")
 
         # Impedir a desativação de estados que estejam associados a ordens de serviço ativas
-        if novo_status == 0:
-            qtd_os_vinculadas = estado_repo.contar_os_por_estado(id_estado)
-            if qtd_os_vinculadas > 0:
-                raise ValueError(
-                    f"Não é possível desativar este estado pois existem {qtd_os_vinculadas} "
-                    f"Ordem(ns) de Serviço associada(s) a ele."
-                )
+        # if novo_status == 0:
+        #     qtd_os_vinculadas = estado_repo.contar_os_por_estado(id_estado)
+        #     if qtd_os_vinculadas > 0:
+        #         raise ValueError(
+        #             f"Não é possível desativar este estado pois existem {qtd_os_vinculadas} "
+        #             f"Ordem(ns) de Serviço associada(s) a ele."
+        #         )
 
         try:
             estado_repo.alterar_status(id_estado, novo_status)
