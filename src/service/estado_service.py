@@ -1,3 +1,4 @@
+# estado_service.py
 """
 Serviço de Gestão de Estados da Ordem de Serviço (Equipa C)
 Responsável pelas regras de negócio, validações e transições de estado das OS.
